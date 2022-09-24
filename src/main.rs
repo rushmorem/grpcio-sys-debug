@@ -1,3 +1,5 @@
+use grpcio::Environment;
+
 fn main() {
-    println!("Hello, world!");
+    let _ = Environment::new(1);
 }

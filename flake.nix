@@ -22,6 +22,7 @@
         craneLib = crane.lib.${system};
         my-crate = craneLib.buildPackage {
           src = craneLib.cleanCargoSource ./.;
+          nativeBuildInputs = with pkgs; [ cmake gcc10 ];
         };
       in
       {
